@@ -2,6 +2,7 @@
 
 body {
     header {
+        height: 80px;
         nav {
             position: fixed;
             width: 100%;
@@ -35,7 +36,7 @@ body {
                     .btns {
                         button {
                             border: 0;
-                            background-color: white;
+                            background-color: transparent;
                             font-family: Poppins;
                         
                         }
@@ -54,6 +55,82 @@ body {
                             padding: 8px 16px;
                             border-radius: 6px;
                         }
+                    }
+                }
+            }
+        }
+    }
+    main {
+        margin-top: 80px;
+        .container {
+            .badge {
+                color: #22C55E;
+                font-family: Poppins;
+                font-size: 12px;
+                font-weight: 600;
+                padding: 2px 8px;
+                border-radius: 36px;
+                background-color: #DCFCE7;
+            }
+            .main-header {
+                font-family: Poppins;
+                margin: 16px 0 64px 0;
+                display: flex;
+                justify-content: space-between;
+                .mn-header-bd {
+                    h3 {
+                        color: #2A3342;
+                        font-size: 48px;
+                        font-weight: 700;
+                        margin-bottom: 16px;
+                    }
+                    p {
+                        font-size: 20px;
+                        color: #556987;
+                        font-weight: 500;
+                        width: 35ch;
+                    }
+                }
+                .btns {
+                    button {
+                        border: 0;
+                        padding: 16px 28px;
+                    }
+                    .hiring {
+                        border-radius: 6px;
+                        background: #22C55E;
+                        color:#F0FDF4;
+                        font-size: 18px;   
+                        margin-right: 14px;                    
+                    }
+                    .culture {
+                        border-radius: 6px;
+                        border: 1px solid#D5DAE1;
+                        background: white;
+                        color: var(--Gray-800, #333F51);
+                        font-size: 18px;
+                    }
+                }
+            }
+            section {
+                .profiles {
+                    display: grid;
+                    gap: 32px;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-areas: 
+                        "f1 f1 ."
+                        "f1 f1 ."
+                        ". f9 f9"
+                        ". f9 f9"
+                    ;
+                    img {
+                        width: 100%;
+                    }
+                    #f1 {
+                        grid-area: f1;
+                    }
+                    #f9 {
+                        grid-area: f9;
                     }
                 }
             }

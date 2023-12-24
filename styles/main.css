@@ -1,4 +1,7 @@
 @import url(./poppins.css);
+body header {
+  height: 80px;
+}
 body header nav {
   position: fixed;
   width: 100%;
@@ -30,7 +33,7 @@ body header nav .container .sub-nav img {
 }
 body header nav .container .sub-nav .btns button {
   border: 0;
-  background-color: white;
+  background-color: transparent;
   font-family: Poppins;
 }
 body header nav .container .sub-nav .btns .login {
@@ -47,6 +50,69 @@ body header nav .container .sub-nav .btns .signup {
   background-color: #22C55E;
   padding: 8px 16px;
   border-radius: 6px;
+}
+body main {
+  margin-top: 80px;
+}
+body main .container .badge {
+  color: #22C55E;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 36px;
+  background-color: #DCFCE7;
+}
+body main .container .main-header {
+  font-family: Poppins;
+  margin: 16px 0 64px 0;
+  display: flex;
+  justify-content: space-between;
+}
+body main .container .main-header .mn-header-bd h3 {
+  color: #2A3342;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+body main .container .main-header .mn-header-bd p {
+  font-size: 20px;
+  color: #556987;
+  font-weight: 500;
+  width: 35ch;
+}
+body main .container .main-header .btns button {
+  border: 0;
+  padding: 16px 28px;
+}
+body main .container .main-header .btns .hiring {
+  border-radius: 6px;
+  background: #22C55E;
+  color: #F0FDF4;
+  font-size: 18px;
+  margin-right: 14px;
+}
+body main .container .main-header .btns .culture {
+  border-radius: 6px;
+  border: 1px solid #D5DAE1;
+  background: white;
+  color: var(--Gray-800, #333F51);
+  font-size: 18px;
+}
+body main .container section .profiles {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "f1 f1 ." "f1 f1 ." ". f9 f9" ". f9 f9";
+}
+body main .container section .profiles img {
+  width: 100%;
+}
+body main .container section .profiles #f1 {
+  grid-area: f1;
+}
+body main .container section .profiles #f9 {
+  grid-area: f9;
 }
 
 .container {
