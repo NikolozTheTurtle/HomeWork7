@@ -1,0 +1,73 @@
+@import url(./poppins.css);
+body header nav {
+  position: fixed;
+  width: 100%;
+}
+body header nav .container .sub-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+body header nav .container .sub-nav .menu {
+  display: flex;
+  gap: 48px;
+}
+body header nav .container .sub-nav .menu li a {
+  text-decoration: none;
+  color: #556987;
+  font-size: 16px;
+  font-family: Poppins;
+}
+body header nav .container .sub-nav .menu li .active {
+  color: #2A3342;
+}
+body header nav .container .sub-nav img {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 0);
+}
+body header nav .container .sub-nav .btns button {
+  border: 0;
+  background-color: white;
+  font-family: Poppins;
+}
+body header nav .container .sub-nav .btns .login {
+  color: #556987;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0;
+  margin-right: 24px;
+}
+body header nav .container .sub-nav .btns .signup {
+  color: #F0FDF4;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #22C55E;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1264px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

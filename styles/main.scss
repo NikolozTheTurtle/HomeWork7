@@ -1,0 +1,86 @@
+@import url(./poppins.css);
+
+body {
+    header {
+        nav {
+            position: fixed;
+            width: 100%;
+            .container {
+                .sub-nav {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 22px 0;
+                    .menu {
+                        display: flex;
+                        gap: 48px;
+                        li {
+                            a {
+                                text-decoration: none;
+                                color: #556987;
+                                font-size: 16px;
+                                font-family: Poppins;
+                            }
+                            .active {
+                                color: #2A3342;
+                            }
+                        }
+                    }
+                    img {
+                        position: absolute;
+                        left: 50%;
+                        right: 50%;
+                        transform: translate(-50%, 0);
+                    }
+                    .btns {
+                        button {
+                            border: 0;
+                            background-color: white;
+                            font-family: Poppins;
+                        
+                        }
+                        .login {
+                            color: #556987;
+                            font-weight: 600;
+                            font-size: 16px;
+                            padding: 0;
+                            margin-right: 24px;
+                        }
+                        .signup {
+                            color: #F0FDF4;
+                            font-size: 14px;
+                            font-weight: 600;
+                            background-color: #22C55E;
+                            padding: 8px 16px;
+                            border-radius: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+@media (min-width: 768px) {
+.container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1264px;
+    }
+  }
